@@ -8,7 +8,7 @@
     <title>YASH Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assests/fav.png">
-    <script src="https://kit.fontawesome.com/869e887729.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c61c6a76b6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,15 +16,15 @@
         <div class="container">
             <nav>
                 <img src="assests/logo1.jpg" alt="LOGO" class="logo">
-                <ul id="sidemenu"> 
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <a class="fas" onclick="closemenu()">X</a>
+                    <a  onclick="closemenu()"><i class="fa-solid fa-xmark"></i></a>
                 </ul>
-                <a class="fas" onclick="openmenu()">=</a>
+                <a onclick="openmenu()"><i class="fa-solid fa-bars"></i></a>
             </nav>
             <div class="header-text">
                 <p>STUDENT/DEVELOPER/PROGRAMMER </p>
@@ -78,6 +78,7 @@
             </div>
         </div>
     </div>
+    <a href="#header" id="myBtn"><i class="fa-solid fa-arrow-up"></i></a>
 
 
 
@@ -86,7 +87,7 @@
             <h1 class="subtitle">MY-SERVICES</h1>
             <div class="services-list">
                 <div class="sdiv">
-                    <!-- <i class="fa-solid fa-code" ></i> -->
+                    <i class="fa-solid fa-code" ></i>
                     <h2>Web Design</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit possimus, adipisci asperiores
                         itaque non officiis saepe soluta veritatis quo corrupti harum. Culpa, quae odit nemo dignissimos
@@ -94,7 +95,7 @@
                     <a href="#">learn more</a>
                 </div>
                 <div class="sdiv">
-                    <!-- <i class="fa-light fa-brackets-curly"></i> -->
+                    <i class="fa-solid fa-terminal"></i>
                     <h2>Blockchain Development</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit possimus, adipisci asperiores
                         itaque non officiis saepe soluta veritatis quo corrupti harum. Culpa, quae odit nemo dignissimos
@@ -102,7 +103,7 @@
                     <a href="#">learn more</a>
                 </div>
                 <div class="sdiv">
-                    <!-- <i class="fa-solid fa-binary"></i> -->
+                    <i class="fa-solid fa-calculator"></i>
                     <h2>Programming Logics</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit possimus, adipisci asperiores
                         itaque non officiis saepe soluta veritatis quo corrupti harum. Culpa, quae odit nemo dignissimos
@@ -122,7 +123,7 @@
                     <div class="layer">
                         <h3>TYPING TEST</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum temporibus fuga rem.</p>
-                        <a href="#">ICON</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -130,7 +131,7 @@
                     <div class="layer">
                         <h3>ONLINE MUSIC PLAYER</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum temporibus fuga rem.</p>
-                        <a href="#">ICON</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -138,7 +139,7 @@
                     <div class="layer">
                         <h3>ONLINE WEATHER APP</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum temporibus fuga rem.</p>
-                        <a href="#">ICON</a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -154,9 +155,9 @@
                     <p><i class="fa-solid fa-envelope"></i>yash1900330130062@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>+91-8307-3082-68</p>
                     <div class="social-icons">
-                        <a href="#">fb</a>
-                        <a href="#">ig</a>
-                        <a href="#">gt</a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a href="assests/Yash's Resume.pdf" download class="btn btn2">Download Resume</a>
                 </div>
@@ -193,35 +194,47 @@
         }
     </script>
     <script>
-        var sidemenu=document.getElementById("sidemenu");
-        function openmenu(){
-            sidemenu.style.right="0";
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
         }
-        function closemenu(){
-            sidemenu.style.right="-200px";
+        function closemenu() {
+            sidemenu.style.right = "-200px";
         }
     </script>
-   
-      
-      
-      <script>
+
+
+
+    <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwpsPHIybPhDReYhaRu1DZ4OL1TQkaMeOWOrGkNQgk7Vm2OGOA8H0N34ZJCUlHhJZ-N/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML="Meassage has been sent successfully!!"
-                setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Meassage has been sent successfully!!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+    </script>
 
 </body>
 
