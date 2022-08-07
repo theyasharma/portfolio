@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASH-PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/869e887729.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assests/logo1.jpg" alt="LOGO" class="logo">
+                <ul id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <a class="fas" onclick="closemenu()">X</a>
+                </ul>
+                <a class="fas" onclick="openmenu()">=</a>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT/DEVELOPER/PROGRAMER </p>
+                <h1>Hi,I'm <span>YASH</span> KUMAR SHARMA</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assests/yash2.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quia qui praesentium. Soluta qui
+                        totam dolorem velit nemo laudantium laborum quo autem vero. Lorem ipsum dolor sit amet
+                        consectetur, adipisicing elit. Veniam est eos cumque autem corporis magnam quidem iste
+                        voluptatem voluptatum. Corporis ad aliquam exercitationem.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Building basic webpages</li>
+                            <li><span>Blockchain Development</span><br>Building basic DAPPS</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>INTERN-FRONTEND DEVELOPER</span><br>H.C.ROOTS<br>
+                                I worked in H.C.Roots as web developer.I was assigned to write code for the css and html
+                                of the website.I designed login/sign-up and code for the same.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ENGINEERING(2019-present)</span><br>RKGIT<br>75.85% till 6th sem</li>
+                            <li><span>INTERMEDIATE(2019)</span><br>LOYAL PUBLIC SCHOOL<br>75.8%</li>
+                            <li><span>HIGH-SCHOOL(2017)</span><br>LOYAL PUBLIC SCHOOL<br>93.1%</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">MY-SERVICES</h1>
+            <div class="services-list">
+                <div class="sdiv">
+                    <!-- <i class="fa-solid fa-code" ></i> -->
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit possimus, adipisci asperiores
+                        itaque non officiis saepe soluta veritatis quo corrupti harum. Culpa, quae odit nemo dignissimos
+                        nam quam deleniti deserunt nihil aliquam veniam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="sdiv">
+                    <!-- <i class="fa-light fa-brackets-curly"></i> -->
+                    <h2>Blockchain Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit possimus, adipisci asperiores
+                        itaque non officiis saepe soluta veritatis quo corrupti harum. Culpa, quae odit nemo dignissimos
+                        nam quam deleniti deserunt nihil aliquam veniam.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="sdiv">
+                    <!-- <i class="fa-solid fa-binary"></i> -->
+                    <h2>Programming Logics</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem fugit possimus, adipisci asperiores
+                        itaque non officiis saepe soluta veritatis quo corrupti harum. Culpa, quae odit nemo dignissimos
+                        nam quam deleniti deserunt nihil aliquam veniam.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">MY-WORK</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assests/w1.8487445c-a91c-43ff-a258-90757bd94ae6">
+                    <div class="layer">
+                        <h3>TYPING TEST</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum temporibus fuga rem.</p>
+                        <a href="#">ICON</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assests/w2.jpg">
+                    <div class="layer">
+                        <h3>ONLINE MUSIC PLAYER</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum temporibus fuga rem.</p>
+                        <a href="#">ICON</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assests/w3.1bbd88a4-0a17-4750-91a0-cd7d98f58e9d">
+                    <div class="layer">
+                        <h3>ONLINE WEATHER APP</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum temporibus fuga rem.</p>
+                        <a href="#">ICON</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">ContactMe</h1>
+                    <p><i class="fa-solid fa-envelope"></i>yash1900330130062@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-8307-3082-68</p>
+                    <div class="social-icons">
+                        <a href="#">fb</a>
+                        <a href="#">ig</a>
+                        <a href="#">gt</a>
+                    </div>
+                    <a href="assests/Yash's Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="YOUR NAME" required>
+                        <input type="email" name="email" placeholder="YOUR EMAIL" required>
+                        <textarea name="message" rows="6" placeholder="YOUR MEASSAGE"></textarea>
+                        <button type="submit" class="btn btn2"> SUBMIT</button>
+                    </form>
+                    <p id="msg"></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169 Yashu. Made with <span class="love">&#9829</span> by YASHU</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+   
+      
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwpsPHIybPhDReYhaRu1DZ4OL1TQkaMeOWOrGkNQgk7Vm2OGOA8H0N34ZJCUlHhJZ-N/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Meassage has been sent successfully!!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
